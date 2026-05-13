@@ -1,44 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Student Performance Prediction</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
 <body>
 
+<div class="background"></div>
+
 <div class="container">
-    <h1>Student Performance Prediction System</h1>
+
+    <div class="header">
+        <h1>🎓 Student Performance Prediction</h1>
+        <p>AI Based Academic Performance Analysis System</p>
+    </div>
 
     <form action="/predict" method="post">
 
-        <input type="number" step="any" name="hours_study" placeholder="Study Hours" required>
+        <div class="input-group">
+            <label>Study Hours</label>
+            <input type="number" step="any" name="hours_study" placeholder="Enter Study Hours" required>
+        </div>
 
-        <input type="number" step="any" name="attendance" placeholder="Attendance Percentage" required>
+        <div class="input-group">
+            <label>Attendance (%)</label>
+            <input type="number" step="any" name="attendance" placeholder="Enter Attendance Percentage" required>
+        </div>
 
-        <input type="number" step="any" name="previous_score" placeholder="Previous Score" required>
+        <div class="input-group">
+            <label>Previous Score</label>
+            <input type="number" step="any" name="previous_score" placeholder="Enter Previous Marks" required>
+        </div>
 
-        <select name="internet_access">
-            <option value="1">Internet Access - Yes</option>
-            <option value="0">Internet Access - No</option>
-        </select>
+        <div class="input-group">
+            <label>Internet Access</label>
+            <select name="internet_access">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
 
-        <select name="extracurricular">
-            <option value="1">Extracurricular Activities - Yes</option>
-            <option value="0">Extracurricular Activities - No</option>
-        </select>
+        <div class="input-group">
+            <label>Extracurricular Activities</label>
+            <select name="extracurricular">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
 
-        <select name="parent_education">
-            <option value="0">Parents Education - Low</option>
-            <option value="1">Parents Education - Medium</option>
-            <option value="2">Parents Education - High</option>
-            <option value="3">Parents Education - Very High</option>
-        </select>
+        <div class="input-group">
+            <label>Parents Education Level</label>
+            <select name="parent_education">
+                <option value="0">Low</option>
+                <option value="1">Medium</option>
+                <option value="2">High</option>
+                <option value="3">Very High</option>
+            </select>
+        </div>
 
-        <button type="submit">Predict</button>
+        <button type="submit">Predict Performance</button>
 
     </form>
 
-    <h2>{{ prediction_text }}</h2>
+    {% if prediction_text %}
+    <div class="result-box">
+        <h2>{{ prediction_text }}</h2>
+    </div>
+    {% endif %}
 
 </div>
 
