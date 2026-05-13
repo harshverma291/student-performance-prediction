@@ -139,3 +139,13 @@ Harsh Verma
 ## ⭐ GitHub Repository
 
 If you like this project, give it a star ⭐
+
+## 📸 Project Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Prediction Result
+
+![Prediction Result](screenshots/result.png)
