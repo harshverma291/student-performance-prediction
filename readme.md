@@ -1,151 +1,29 @@
-# 🎓 Student Performance Prediction System
+# Student Performance Prediction System 🎓
 
-An AI/ML-based web application that predicts student academic performance using Machine Learning algorithms built with Python and Flask.
-
----
+A Machine Learning-powered web application built with Flask that predicts whether a student is likely to pass or fail based on various academic and lifestyle metrics.
 
 ## 🚀 Features
+* Predictive Analytics: Uses a trained Machine Learning model to evaluate student success factors.
+* Modern UI: Responsive, premium Glassmorphism interface designed with HTML5 and CSS3.
+* Robust Backend: Secure and lightweight implementation using Python and Flask.
 
-- Predicts student academic performance
-- Machine Learning based prediction system
-- Flask web application
-- Modern responsive UI
-- User-friendly interface
-- Real-time prediction
-- GitHub-ready project structure
+## 🛠️ Tech Stack
+* Backend: Python, Flask
+* Machine Learning: Scikit-Learn, Pandas, NumPy, Joblib
+* Frontend: HTML5, CSS3 (Poppins Typography, Glassmorphism Styling)
 
----
+## 📋 Features Evaluated by Model
+The model accepts the following 6 distinct features to make predictions:
+1. Study Hours: Weekly hours spent studying.
+2. Attendance: Overall school/college attendance percentage.
+3. Previous Score: Grades from the last examination.
+4. Internet Access: Availability of internet connection (Yes/No).
+5. Extracurricular Activities: Participation in extra activities (Yes/No).
+6. Parent Education Level: Highest education level achieved by parents (Low/Medium/High).
 
-## 🛠️ Technologies Used
+## 📦 Installation & Local Setup
 
-- Python
-- Flask
-- Pandas
-- NumPy
-- Scikit-learn
-- HTML
-- CSS
-- Joblib
-
----
-
-## 📂 Project Structure
-
-```bash
-student-performance-prediction/
-│
-├── app.py
-├── model.py
-├── model.pkl
-├── student_data.csv
-├── requirements.txt
-│
-├── templates/
-│   └── index.html
-│
-├── static/
-│   └── style.css
-│
-└── README.md
-```
-
----
-
-## ⚙️ Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/harshverma291/student-performance-prediction.git
-```
-
-### Open Project Folder
-
-```bash
-cd student-performance-prediction
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Run Project
-
-### Train Machine Learning Model
-
-```bash
-python model.py
-```
-
-### Run Flask Application
-
-```bash
-python app.py
-```
-
----
-
-## 🌐 Open in Browser
-
-```bash
-http://127.0.0.1:5000
-```
-
----
-
-## 📊 Machine Learning Algorithm
-
-This project uses:
-
-- Random Forest Classifier
-
-for predicting student performance based on:
-- Study Hours
-- Attendance
-- Previous Scores
-- Internet Access
-- Extracurricular Activities
-- Parent Education
-
----
-
-## 📸 Project Preview
-
-Modern AI-based interface with prediction system.
-
----
-
-## 🔮 Future Enhancements
-
-- Database Integration
-- Login & Signup System
-- Deep Learning Model
-- Student Dashboard
-- Charts & Analytics
-- Cloud Deployment
-
----
-
-## 👨‍💻 Author
-
-Harsh Verma
-
----
-
-## ⭐ GitHub Repository
-
-If you like this project, give it a star ⭐
-
-## 📸 Project Screenshots
-
-### Home Page
-
-![Home Page](screenshots/home.png)
-
-### Prediction Result
-
-![Prediction Result](screenshots/result.png)
+1. Clone the Repository:
+   `bash
+   git clone [https://github.com/your-username/student-performance-prediction.git](https://github.com/your-username/student-performance-prediction.git)
+   cd student-performance-prediction
