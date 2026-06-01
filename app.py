@@ -7,7 +7,7 @@ import datetime
 app = Flask(__name__)
 
 # MongoDB Cloud Connection (Atlas String)
-MONGO_URI = "mongodb+srv://hrverma438_db_user:DofFQvH5UArjcT7a@cluster0.h0ao7g0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "mongodb+srv://hrverma438_db_user:Harshve730@cluster0.h0ao7g0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = MongoClient(MONGO_URI)
 
 # Database aur Collection setup
@@ -55,7 +55,7 @@ def predict():
         
         # Inserting data into MongoDB
         collection.insert_one(prediction_data)
-        
+
         if prediction[0] == 1:
             result = 'Student is likely to PASS with good performance.'
         else:
